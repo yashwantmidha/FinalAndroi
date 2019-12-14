@@ -193,16 +193,17 @@ public class MainActivity extends AppCompatActivity
         ref.child("yourNode").updateChildren(map);
 
 
-//        String a = "y=" +azimuth + "x =" + pitch + "Z = " + roll;
-//        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"1")
-//                .setSmallIcon(R.drawable.spot)
-//                .setContentTitle("Data Sent")
-//                .setContentText(a)
-//                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
-//        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-//
-//// notificationId is a unique int for each notification that you must define
-//         notificationManager.notify("1", builder.build());
+      String a = "y=" +azimuth + "x =" + pitch + "Z = " + roll;
+
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"1")
+                .setSmallIcon(R.drawable.spot)
+                .setContentTitle("Data Sent")
+                .setContentText(a)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+
+// notificationId is a unique int for each notification that you must define
+         notificationManager.notify(1, builder.build());
 
     }
     public void sendNow() {
