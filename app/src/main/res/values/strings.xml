@@ -4,7 +4,8 @@
     <string name="label_azimuth_string">Azmiuth:</string>
     <string name="label_pitch_string">Pitch:</string>
     <string name="label_roll_string">Roll:</string>
-
+    <string name="channel_name">ChanelName</string>
+    <string name="channel_description">ChanelDis</string>
     <!-- String for the orientation values. The %1$.2f part is a placeholder
      that will be filled in at runtime:
      %1 is the value to replace

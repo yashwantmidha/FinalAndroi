@@ -1,11 +1,14 @@
 package com.yashwant.finalandroid;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.os.Build;
 import android.os.Bundle;
 //import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +16,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -186,6 +191,19 @@ public class MainActivity extends AppCompatActivity
         map.put("y",pitch);
         map.put("z",roll);
         ref.child("yourNode").updateChildren(map);
+
+
+//        String a = "y=" +azimuth + "x =" + pitch + "Z = " + roll;
+//        NotificationCompat.Builder builder = new NotificationCompat.Builder(this,"1")
+//                .setSmallIcon(R.drawable.spot)
+//                .setContentTitle("Data Sent")
+//                .setContentText(a)
+//                .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+//        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+//
+//// notificationId is a unique int for each notification that you must define
+//         notificationManager.notify("1", builder.build());
+
     }
     public void sendNow() {
 
@@ -203,5 +221,9 @@ public class MainActivity extends AppCompatActivity
         map.put("y",pitch);
         map.put("z",roll);
         ref.child("NewNode").updateChildren(map);
+
+
     }
-}
+
+    }
+
