@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "651855701776",
+    "firebase_url": "https://finalandroid-b2afb.firebaseio.com",
+    "project_id": "finalandroid-b2afb",
+    "storage_bucket": "finalandroid-b2afb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651855701776:android:e215e3dc784f1249d06795",
+        "android_client_info": {
+          "package_name": "com.yashwant.finalandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651855701776-3ejtp9ro3nne6qoa4mvpglsg0puu5d5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yashwant.finalandroid",
+            "certificate_hash": "342bc337235c5650aa954880b4c529fe3e27a558"
+          }
+        },
+        {
+          "client_id": "651855701776-04osenshkifolrrobpg4ft4thuhj4r6c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBtNSYsS-VT8Nlvm98BJBkJ-4wU1Aulbs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651855701776-04osenshkifolrrobpg4ft4thuhj4r6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
